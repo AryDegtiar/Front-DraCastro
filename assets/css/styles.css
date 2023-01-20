@@ -1,0 +1,8 @@
+.video-blur {
+    filter: blur(2px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+  }
