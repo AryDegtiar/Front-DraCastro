@@ -1180,6 +1180,61 @@
     .faq-item.open .faq-a { max-height: 320px; padding: 0 24px 22px; }
     .faq-a p { color: var(--text-body); font-size: .94rem; line-height: 1.75; }
 
+    /* ─── Investigación y Docencia ─────────────────────────────── */
+    #investigacion {
+      padding: 120px 0;
+      background: var(--white);
+      border-top: 1px solid var(--grey-lt);
+    }
+    .invest-header { text-align: center; margin-bottom: 64px; }
+    .invest-header .section-label { justify-content: center; }
+    .invest-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .invest-card {
+      background: var(--off-white);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      border: 1px solid rgba(10,31,60,.07);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .invest-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 56px rgba(10,31,60,.1);
+    }
+    .invest-card-icon {
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-lt) 100%);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .invest-card-icon svg { width: 26px; height: 26px; color: var(--gold-lt); }
+    .invest-card-title {
+      font-family: var(--serif); font-size: 1.1rem; font-weight: 600;
+      color: var(--navy); margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--gold-pale);
+    }
+    .invest-list {
+      list-style: none; display: flex; flex-direction: column; gap: 14px;
+    }
+    .invest-item {
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .invest-bullet {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--gold); flex-shrink: 0; margin-top: 6px;
+    }
+    .invest-item-text { font-size: .88rem; line-height: 1.55; color: var(--text-body); }
+    .invest-item strong {
+      color: var(--navy); font-weight: 600;
+      display: block; font-size: .86rem; margin-bottom: 2px;
+    }
+    .invest-item span { color: var(--grey-mid); font-size: .8rem; }
+
     /* ─── Responsive ────────────────────────────────────────────── */
     @media (max-width: 1024px) {
       .sobre-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -1189,9 +1244,11 @@
       .difer-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 24px; }
       .proceso-grid { grid-template-columns: repeat(2, 1fr); }
       .proceso-connector { display: none; }
+      .invest-grid { grid-template-columns: 1fr; max-width: 580px; margin: 0 auto; }
     }
 
     @media (max-width: 768px) {
+      .invest-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .mobile-menu { display: none; }
@@ -1523,7 +1580,7 @@
         <div class="section-label"><span class="gold-line"></span>Sobre la especialista</div>
         <h2 class="section-title">Una trayectoria <span>de excelencia</span></h2>
         <p class="section-sub">
-          La Dra. Claudia Fabiana Isabel Castro es Médica Oftalmóloga recibida en la Universidad de Buenos Aires (1992), con más de 30 años de ejercicio clínico, docente e institucional. Es Jefa de Consultorios Externos del IREP, Docente Autorizada de la UBA y Licenciada en Rehabilitación Visual. Combina rigor científico, vocación docente y un trato cercano y humano con cada paciente.
+          La Dra. Claudia Fabiana Isabel Castro es Médica Oftalmóloga recibida en la Universidad de Buenos Aires (1992), con más de 30 años de ejercicio clínico, docente e institucional. Es Jefa de Consultorios Externos del IREP, Docente Autorizada de la UBA y Licenciada en Rehabilitación Visual. Se formó en el Hospital Oftalmológico Santa Lucía y cuenta con publicaciones en revistas indexadas internacionales. Combina rigor científico, vocación docente y un trato cercano y humano con cada paciente.
         </p>
 
         <div class="sobre-tray">
@@ -1571,10 +1628,149 @@
             <div class="sobre-cred-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e8c97a" stroke-width="1.8"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.5h6V4M8.5 11l2 2 3.5-3.5"/></svg></div>
             <div>
               <div class="sobre-cred-title">Premio Trayectoria en Oftalmología — SAO, 2020</div>
-              <div class="sobre-cred-sub">Miembro del Consejo Argentino de Oftalmología (CAO), SAO y ASAERCA</div>
+              <div class="sobre-cred-sub">Miembro CAO y SAO · Coordinadora de la Subcomisión de Oftalmología — ASAERCA (2020–presente) · Invitada Seminario Nacional de Expertos CAO, 2019</div>
+            </div>
+          </div>
+          <div class="sobre-cred">
+            <div class="sobre-cred-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e8c97a" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4 12.5-12.5z"/></svg></div>
+            <div>
+              <div class="sobre-cred-title">Publicación en revista Ophthalmology (2020) · Capítulo Manual Latinoamericano (2023)</div>
+              <div class="sobre-cred-sub">Autologous Corneal Transplant from an Enucleated Fellow Eye · Cap. 12 Baja Visión, Manual de Rehabilitación Visual en América Latina — ULC-ULAC-FOAL</div>
+            </div>
+          </div>
+          <div class="sobre-cred">
+            <div class="sobre-cred-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e8c97a" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 10h6M9 14h4"/></svg></div>
+            <div>
+              <div class="sobre-cred-title">Hospital Oftalmológico Santa Lucía — Docencia e Investigación (1994–2010)</div>
+              <div class="sobre-cred-sub">Institución de referencia nacional · Coordinadora Sanatorio Güemes (2008–2012) · Coordinadora Clínica AMEBPBA (2002–2021)</div>
             </div>
           </div>
         </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Investigación y Docencia ────────────────────────────────── -->
+<section id="investigacion">
+  <div class="container">
+    <div class="invest-header reveal">
+      <div class="section-label"><span class="gold-line"></span>Ciencia y formación</div>
+      <h2 class="section-title">Investigación, <span>docencia</span> y trayectoria</h2>
+      <p class="section-sub" style="margin: 16px auto 0; text-align: center; max-width: 620px;">Una carrera construida sobre la práctica clínica, la producción científica y la transmisión del conocimiento en las principales instituciones del país.</p>
+    </div>
+    <div class="invest-grid">
+
+      <div class="invest-card reveal delay-1">
+        <div class="invest-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+        </div>
+        <h3 class="invest-card-title">Producción científica</h3>
+        <ul class="invest-list">
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Publicación indexada — Ophthalmology (2020)</strong>
+              <span>Autologous Corneal Transplant from an Enucleated Fellow Eye for Choroidal Melanoma · Vol. 11:181–188</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Capítulo de libro — Manual Latinoamericano (2023)</strong>
+              <span>Cap. 12: Baja Visión · Manual de Rehabilitación para Personas con Discapacidad Visual en América Latina · ULC-ULAC-FOAL</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Subinvestigadora — Ensayo clínico internacional (2017–2019)</strong>
+              <span>Bristol-Myers Squibb · The Role of Inflammation in Dry Eye</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Presentaciones como investigadora principal</strong>
+              <span>ASAERCA 2018 · SAO 2014 · CAO 1999</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="invest-card reveal delay-2">
+        <div class="invest-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg>
+        </div>
+        <h3 class="invest-card-title">Docencia universitaria</h3>
+        <ul class="invest-list">
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Profesora Titular — UNSAM (2016–2021)</strong>
+              <span>Prácticas Profesionales I y II · Lic. en Rehabilitación Visual</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Docente Autorizada — UBA (Res. 4575, desde 2012)</strong>
+              <span>Carrera de Especialista en Oftalmología (2007–2022)</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Profesora Adjunta — UAI (2004–2006)</strong>
+              <span>Oftalmología · Carrera de Medicina</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Instructora y Coord. de Residentes — COD/UBA (2022–presente)</strong>
+              <span>Formación y evaluación de médicos residentes en oftalmología</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="invest-card reveal delay-3">
+        <div class="invest-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 10h6M9 14h4"/></svg>
+        </div>
+        <h3 class="invest-card-title">Trayectoria institucional</h3>
+        <ul class="invest-list">
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>IREP — Inst. de Rehabilitación Psicofísica (2010–presente)</strong>
+              <span>Médica de Planta · Coordinadora Plástica y Superficie Ocular · Jefa de Consultorios Externos (2024)</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Hospital Oftalmológico Santa Lucía (1994–2010)</strong>
+              <span>Departamento de Docencia e Investigación · Referente nacional en oftalmología</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Sanatorio Güemes (2008–2012)</strong>
+              <span>Coordinadora del Servicio de Oftalmología</span>
+            </div>
+          </li>
+          <li class="invest-item">
+            <div class="invest-bullet"></div>
+            <div class="invest-item-text">
+              <strong>Clínica AMEBPBA (2002–2021 · 20 años)</strong>
+              <span>Coordinadora del Servicio de Oftalmología</span>
+            </div>
+          </li>
+        </ul>
       </div>
 
     </div>
