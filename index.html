@@ -642,7 +642,7 @@
       position: relative;
       width: 100%;
       aspect-ratio: 3/4;
-      border-radius: 200px 200px 24px 24px;
+      border-radius: 24px;
       overflow: hidden;
       background: linear-gradient(160deg, #1a3e6e 0%, #0d2040 100%);
       box-shadow: 0 24px 80px rgba(0, 0, 0, .5), 0 0 0 1px rgba(201, 168, 76, .2);
@@ -702,7 +702,7 @@
     .hero-photo-deco {
       position: absolute;
       border: 2px solid rgba(201, 168, 76, .4);
-      border-radius: 200px 200px 24px 24px;
+      border-radius: 24px;
       top: -8px;
       left: -8px;
       right: -8px;
@@ -2658,20 +2658,6 @@
         <div class="service-card reveal delay-2">
           <div class="service-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 3c-1 4-4 5-4 8a4 4 0 008 0c0-3-3-4-4-8z" />
-              <path d="M7 20h10" />
-            </svg>
-          </div>
-          <h3 class="service-name">Vías Lagrimales y Plástica Ocular</h3>
-          <p class="service-desc">Tratamiento del lagrimeo persistente, obstrucción de la vía lagrimal y patología de
-            los párpados, con abordaje clínico y quirúrgico de plástica ocular.</p>
-          <a href="#contacto" class="service-link" data-motivo="vias-lagrimales">Consultar por mi caso →</a>
-          <div class="service-card-deco"></div>
-        </div>
-
-        <div class="service-card reveal delay-3">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z" />
               <circle cx="12" cy="12" r="3" />
               <path d="M16 5l2-2M19 9l2.5-1" />
@@ -2684,7 +2670,35 @@
           <div class="service-card-deco"></div>
         </div>
 
+        <div class="service-card reveal delay-3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 21C7 17 3 13.5 3 9a4.5 4.5 0 019-1 4.5 4.5 0 019 1c0 4.5-4 8-9 12z" />
+            </svg>
+          </div>
+          <h3 class="service-name">Penfigoide Ocular Cicatricial</h3>
+          <p class="service-desc">Diagnóstico y seguimiento de esta enfermedad autoinmune que afecta la conjuntiva.
+            Atención especializada en superficie ocular con experiencia clínica específica.</p>
+          <a href="https://superficie-ocular-poc.netlify.app/" class="service-link" target="_blank" rel="noopener">Ver
+            preguntas frecuentes →</a>
+          <div class="service-card-deco"></div>
+        </div>
+
         <div class="service-card reveal delay-4">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 3c-1 4-4 5-4 8a4 4 0 008 0c0-3-3-4-4-8z" />
+              <path d="M7 20h10" />
+            </svg>
+          </div>
+          <h3 class="service-name">Vías Lagrimales y Plástica Ocular</h3>
+          <p class="service-desc">Tratamiento del lagrimeo persistente, obstrucción de la vía lagrimal y patología de
+            los párpados, con abordaje clínico y quirúrgico de plástica ocular.</p>
+          <a href="#contacto" class="service-link" data-motivo="vias-lagrimales">Consultar por mi caso →</a>
+          <div class="service-card-deco"></div>
+        </div>
+
+        <div class="service-card reveal delay-5">
           <div class="service-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <circle cx="12" cy="12" r="9" />
@@ -2696,20 +2710,6 @@
           <p class="service-desc">Atención especializada para personas con disminución visual: ayudas ópticas,
             entrenamiento y estrategias para aprovechar al máximo la visión remanente y la autonomía.</p>
           <a href="#contacto" class="service-link" data-motivo="baja-vision">Quiero más información →</a>
-          <div class="service-card-deco"></div>
-        </div>
-
-        <div class="service-card reveal delay-5">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 21C7 17 3 13.5 3 9a4.5 4.5 0 019-1 4.5 4.5 0 019 1c0 4.5-4 8-9 12z" />
-            </svg>
-          </div>
-          <h3 class="service-name">Penfigoide Ocular Cicatricial</h3>
-          <p class="service-desc">Diagnóstico y seguimiento de esta enfermedad autoinmune que afecta la conjuntiva.
-            Atención especializada en superficie ocular con experiencia clínica específica.</p>
-          <a href="https://superficie-ocular-poc.netlify.app/" class="service-link" target="_blank" rel="noopener">Ver
-            preguntas frecuentes →</a>
           <div class="service-card-deco"></div>
         </div>
 
@@ -2775,9 +2775,8 @@
               <path d="M12 3c-1 4-4 5-4 8a4 4 0 008 0c0-3-3-4-4-8z" />
               <path d="M7 20h10" />
             </svg></div>
-          <h3 class="difer-title">Subespecialista poco frecuente</h3>
-          <p class="difer-desc">Vía lagrimal y plástica ocular: patologías que requieren experiencia específica y que el
-            oftalmólogo general no siempre resuelve.</p>
+          <h3 class="difer-title">Subespecialidades</h3>
+          <p class="difer-desc">Especialista en ojo seco, vías lagrimales y plástica ocular: patologías que requieren experiencia específica y que el oftalmólogo general no siempre resuelve.</p>
         </div>
         <div class="difer-item reveal delay-4">
           <div class="difer-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -2820,8 +2819,7 @@
             La Dra. Claudia Fabiana Isabel Castro es Médica Oftalmóloga recibida en la Universidad de Buenos Aires
             (1992), con más de 30 años de ejercicio clínico, docente e institucional. Es Responsable del Servicio de
             Oftalmología del IREP, Docente Autorizada de la UBA, Licenciada en Rehabilitación Visual y Auditora Médica.
-            Se formó en el Hospital Oftalmológico Santa Lucía y cuenta con publicaciones en revistas indexadas
-            internacionales. Combina rigor científico, vocación docente y un trato cercano y humano con cada paciente.
+            Cuenta con publicaciones en revistas indexadas internacionales. Combina rigor científico, vocación docente y un trato cercano y humano con cada paciente.
           </p>
 
           <div class="sobre-tray">
@@ -2831,11 +2829,11 @@
             </div>
             <div class="sobre-tray-item">
               <div class="sobre-tray-label">Cargo actual</div>
-              <div class="sobre-tray-value">Resp. Servicio de Oftalmología — IREP</div>
+              <div class="sobre-tray-value">Resp. Servicio de Oftalmología — IREP<br><span style="font-size:.82em; font-weight:400; opacity:.75;">Jefa de Consultorios Externos</span></div>
             </div>
             <div class="sobre-tray-item">
               <div class="sobre-tray-label">Especialidad</div>
-              <div class="sobre-tray-value">Superficie Ocular · Cirugía Plástica y Vías Lagrimales · Rehabilitación Visual</div>
+              <div class="sobre-tray-value">Superficie Ocular · Cirugía Plástica Ocular · Rehabilitación Visual · Auditoría Médica</div>
             </div>
             <div class="sobre-tray-item">
               <div class="sobre-tray-label">Médica desde</div>
@@ -2904,19 +2902,6 @@
                   Latinoamericano (2023)</div>
                 <div class="sobre-cred-sub">Autologous Corneal Transplant from an Enucleated Fellow Eye · Cap. 12 Baja
                   Visión, Manual de Rehabilitación Visual en América Latina — ULC-ULAC-FOAL</div>
-              </div>
-            </div>
-            <div class="sobre-cred">
-              <div class="sobre-cred-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e8c97a"
-                  stroke-width="1.8">
-                  <path d="M3 21h18M5 21V7l7-4 7 4v14" />
-                  <path d="M9 10h6M9 14h4" />
-                </svg></div>
-              <div>
-                <div class="sobre-cred-title">Hospital Oftalmológico Santa Lucía — Docencia e Investigación (1994–2010)
-                </div>
-                <div class="sobre-cred-sub">Institución de referencia nacional · Coordinadora Sanatorio Güemes
-                  (2008–2012) · Coordinadora Clínica AMEBPBA (2002–2021)</div>
               </div>
             </div>
           </div>
